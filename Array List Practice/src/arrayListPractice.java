@@ -99,5 +99,28 @@ public class arrayListPractice
 				candies = false;
 				}
 			}
+		Scanner userInput5 = new Scanner(System.in);
+		System.out.println("Are these candies correct?");
+		String yesOrNo = userInput5.nextLine();
+		if(yesOrNo.equals("yes"))
+			{
+			System.out.println("Alright, have a good day!");
+			}
+		else if(yesOrNo.equals("no"))
+			{
+			Scanner userInput6 = new Scanner(System.in);
+			System.out.println("Which number of candy in the list would you like to remove?");
+			int remove = userInput6.nextInt();
+			candy.remove(remove-1);
+			System.out.println("Here you go: ");
+			for(String hiya : candy)
+				{
+				System.out.println(hiya);
+				}
+			}
 		}
 	}
+
+
+
+
